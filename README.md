@@ -1,3 +1,9 @@
+## queryDsl 설정 파일
+- https://devfunny.tistory.com/844 참고
+- 강의에서의 java와 springboot 버전과는 다르게 여기서는 `java11, springboot 2.7.*` 버전으로 설정했다.
+- 처음에 설정하는 것에 좀 고생을 했기에 기록.
+
+```
 buildscript {
 	ext {
 		queryDslVersion = "5.0.0"
@@ -66,3 +72,4 @@ compileQuerydsl {
 	options.annotationProcessorPath = configurations.querydsl // Q파일을 생성해준다.
 }
 //querydsl 추가 끝
+```
