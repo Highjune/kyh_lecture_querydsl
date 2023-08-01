@@ -12,6 +12,7 @@ spring:
       hibernate:
 #        show_sql: true  # System.out 으로 출력됨
         format_sql: true
+        use_sql_comments: true
 
 # 로그로 출력됨
 logging.level:
