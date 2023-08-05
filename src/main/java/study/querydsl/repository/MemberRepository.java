@@ -7,8 +7,10 @@ import java.util.List;
 
 /**
  * 스프링 데이터 jpa
+ * JpaRepository 뿐 아니라 queryDsl 을 위한 MemberRepositoryCustom 도 상속받기
+ *
  */
-public interface MemberRepository extends JpaRepository<Member, Long> {
+public interface MemberRepository extends JpaRepository<Member, Long>, MemberRepositoryCustom {
 
     // select m from Member m where m.username = ? JPQL 자동생성
     List<Member> findByUsername(String username);
